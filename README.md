@@ -13,6 +13,7 @@ This program "slurps" the entire log file into a single string.  This is really 
 
 
 3>> process_logfile_extended.pl
+
 Imagine you had hyndreds of files in pairs like 415_singet.log and 415_doublet.log
 You want perl to extract the data, but take difference between doublet and singlet electronic energy.  You want perl to print the singlet doublet data for each file number on a single line because that's easy to work with in excel.  The output data would look like this (just capturing electronic energy here).
 

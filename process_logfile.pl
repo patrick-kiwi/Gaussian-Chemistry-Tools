@@ -19,16 +19,8 @@ foreach (@files) {
 }
 
 
-my $counter = 0;
 for my $filename (sort keys %data){
-if ($filename =~ /(\d+)_(....let)/){
-if ($counter != $1) {
-print "$filename $2 @{$data{$filename}} ";
-$counter = $1;
-} elsif ($counter == $1) {
-print "$2 @{$data{$filename}}\n";
-}
-}
+print "$filename @{$data{$filename}}\n ";
 }
 
 
@@ -37,7 +29,7 @@ print "$2 @{$data{$filename}}\n";
 
 sub load_data {
 my $file = $_;
-my ($HF, $ZPVE, $fe, $HFZPE);
+my ($HF, $ZPVE, $FreeEnergy, $HFZPVE);
 my $text = do { local( @ARGV, $/ ) = $file ; <> } ;
 $text =~ s/\n //g;
 foreach ($text =~ m/HF=(-[0-9]+\.[0-9]+)/g) {
@@ -47,10 +39,9 @@ foreach ($text =~ m/ZeroPoint=([0-9]+\.[0-9]+)/g) {
 $ZPVE=$1;
 }
 foreach ($text =~ m/Sum\sof\selectronic\sand\sthermal\sFree\sEnergies=\s+(-[0-9]+\.[0-9]+)/g) {
-$fe=$1;
+$FreeEnergy=$1;
 }
-$HFZPE=$HF+$ZPVE;
+$HFZPVE=$HF+$ZPVE;
 #print "Processing $file...\n";
-push (@{$data{$file}}, ($HF, $ZPVE, $HFZPE, $fe));
+push (@{$data{$file}}, ($HF, $ZPVE, $HFZPVE, $FreeEnergy));
 }
-

@@ -38,7 +38,6 @@ if ($counter==0) {
 if (/.*[0-9] [0-9]\n/) { #look for charge multiplicity
 $counter=1; # change counter and insert stuff
 s/(.*[0-9] [0-9]\n)/\nCoordinates from $in\n\nPlace Holder\n/;
-#last; 
 } else {
 s/.*?\n//e; #otherwise delete everyting
 }

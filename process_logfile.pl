@@ -51,6 +51,6 @@ $fe=$1;
 }
 $HFZPE=$HF+$ZPVE;
 #print "Processing $file...\n";
-push (@{$data{$file}}, ($HF));
+push (@{$data{$file}}, ($HF, $ZPVE, $HFZPE, $fe));
 }
 

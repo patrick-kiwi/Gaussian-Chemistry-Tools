@@ -5,7 +5,7 @@ of gjf input and log output files.  Perhaps you'll find them useful.
 They're pretty "rough and ready", so you'll need to adjust the source 
 code on the fly.  Here are the most useful.
 
-1>> ManiuplateGJF XXX.gjf   
+1>> maniuplateGJF.pl XXX.gjf   
 This program changes both the file name and the
 file content.  It strips out everything before charge and multiplicity line. 
 At the moment it's configured to covert (for examele) 415.gjf to 
@@ -15,7 +15,7 @@ a massive batch of input files.  You can modify the code to increment the
 numbers in the filename if you like.  Note, If the gjf files have come from windows
 make sure you use dos2unix.
 
-2>> Process_logfile  
+2>> process_logfile.pl  
 This program "slurps" the entire log file into a single
 string.  This is really important because some output flows over multiple lines.
 Program then pattern matches to find (for instance) HF, ZPE, Gibbs

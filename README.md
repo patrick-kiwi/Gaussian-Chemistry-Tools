@@ -20,8 +20,9 @@ This program "slurps" the entire log file into a single
 string.  This is really important because some output flows over multiple lines.
 Program then pattern matches to find (for instance) HF, ZPE, Gibbs
 free energy, etc.  Then prints the output filename.log HF, ZPE, FE etc.
-Note you need to hard code the filenames you wish to "glob in" on the lucky
-13th line.  Again make sure you use dos2unix if the log file came from windows.
+Note I've hard coded the file selection in the line beginning with my @files
+you can change the fileglobbing if you wish, ie glob"31[5-9]singlet.log"  
+Again make sure you use dos2unix if the log file came from windows.
 
 
 Apologies if coding is a bit crappy.  I'm self taught.

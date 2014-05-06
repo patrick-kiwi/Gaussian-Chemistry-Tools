@@ -19,6 +19,7 @@ foreach (@files) {
 }
 
 
+#Now sort through the HoA and print all the data
 for my $filename (sort keys %data){
 print "$filename @{$data{$filename}}\n ";
 }

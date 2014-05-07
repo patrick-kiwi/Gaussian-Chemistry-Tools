@@ -13,10 +13,10 @@ This program "slurps" the entire log file into a single string.  This is really 
 
 
 3>> process_logfile_extended.pl  
-Imagine you had hundreds of paired files, for instance -> 415_singet.log and 415_doublet.log
-You want perl to extract the data, but you also want the singlet and doublet data to appear on a single line because that's easy to work with in excel.  The output data would look like this (just capturing electronic energy here).
+Imagine you had hundreds of paired files with a common filename pattern, for instance -> 415_singet.log and 415_doublet.log
+You want perl to extract all the data in a way where the singlet and doublet data to appear on a single line because that's easy to work with in excel.  This script makes the output look like this (just capturing electronic energy here).
 
- "476_doublet.log doublet -1085.2256596 singlet -1085.0870699"
+ "415 doublet -1085.2256596 singlet -1085.0870699"
 
 
 

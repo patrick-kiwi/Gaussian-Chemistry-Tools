@@ -12,10 +12,10 @@ use warnings;
 
 my %data; 	#Global varyable, the HoA data container
 
-
+#loads energies etc into data container
 my @files = glob("*.log");
 foreach (@files) {
-&load_data();  	#loads energies etc into data container
+&load_data();  	
 }
 
 
@@ -25,9 +25,8 @@ print "$filename @{$data{$filename}}\n ";
 }
 
 
-# Subroutine "slurps" each file so a single string
+# Subroutine "slurps" each file to a single string
 # and then parses the relevant data into a hash of arrays
-
 sub load_data {
 my $file = $_;
 my ($HF, $ZPVE, $FreeEnergy, $HFZPVE);

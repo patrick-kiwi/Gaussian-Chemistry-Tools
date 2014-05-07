@@ -9,13 +9,14 @@ use warnings;
 
 my %data; 	#Global varyable, the HoA data container
 
-
+#loads energies etc into data container
 my @files = glob("47[3-9]*let.log 4[8-9][0-9]*let.log");
 foreach (@files) {
-&load_data();  	#loads energies etc into data container
+&load_data();  	
 }
 
-
+#Pull apart the filename wiht REGEX's and
+#print the data on a single line 
 my $counter = 0;
 for my $filename (sort keys %data){
 if ($filename =~ /(\d+)_(....let)/){

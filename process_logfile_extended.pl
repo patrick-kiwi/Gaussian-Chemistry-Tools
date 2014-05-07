@@ -20,7 +20,7 @@ my $counter = 0;
 for my $filename (sort keys %data){
 if ($filename =~ /(\d+)_(....let)/){
 if ($counter != $1) {
-print "$filename $2 @{$data{$filename}} ";
+print "$1 $2 @{$data{$filename}} ";
 $counter = $1;
 } elsif ($counter == $1) {
 print "$2 @{$data{$filename}}\n";

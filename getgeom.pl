@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 # Extracts charge, multiplicity, and co-ordinates from a log file
-# typical usage ./getgeom foo.log > bar.gjf 
+# typical usage ./getgeom.pl foo.log > bar.gjf 
 
 my $counter1=0;
 my $counter2=0;

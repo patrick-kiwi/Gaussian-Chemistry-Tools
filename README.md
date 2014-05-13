@@ -1,6 +1,6 @@
 Gaussian Perl Tools
 
-These are some tools I've created for myself to speed up processing of gjf input and log output files.  Perhaps you'll find them useful. They're pretty "rough and ready", so you'll need to adjust the source code on the fly.  Here are the most useful programs I've made so far.
+These are some tools I've created for myself to speed up processing of gjf input and log output files.  Perhaps you'll find them useful. They're pretty "rough and ready", so you'll need to adjust the source code a wee bit.  Here are the most useful programs I've made so far.
 
 1>> getgeom.pl foo.log > bar.gjf
 This script extracts the final coordinants including charge and multiplicity from the log file and stuffs in into a new gjf file, ready for further batch processing.

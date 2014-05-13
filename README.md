@@ -10,16 +10,14 @@ This program changes both the file name and the file content and outputs a new m
 
 3>> process_logfile.pl  
 This program "slurps" the entire log file into a single string.  This is really important because some output flows over multiple lines. Perl then pattern matches over the string to find (for instance) HF, ZPE, Gibbs free energy, etc.  This data is then loaded into an array.  If more than one instance of the pattern is matched in the string( ie file) then you get overwrite so you capture the last instance of the match.  Finally perl prints the output filename.log HF, ZPE, FE etc.  Note I've hard coded the file selection in the line beginning with my @files.  You can change the fileglobbing if you wish, ie glob"31[5-9]_singlet.log".  Again make sure you use dos2unix if the log file came from windows.  The output data looks like this..
-
- "409_doublet.log -970.7015063 0.2122021 -970.4893042 -970.529732"
+"409_doublet.log -970.7015063 0.2122021 -970.4893042 -970.529732"
 
 
 
 4>> process_logfile_extended.pl  
 Imagine you had hundreds of paired files with a common filename pattern, for instance -> 415_singet.log and 415_doublet.log
 You want perl to extract all the data in a way where the singlet and doublet data to appear on a single line because that's easy to work with in excel.  This script makes the output look like this (just capturing electronic energy here).
-
- "415 doublet -1085.2256596 singlet -1085.0870699"
+"415 doublet -1085.2256596 singlet -1085.0870699"
 
 
 

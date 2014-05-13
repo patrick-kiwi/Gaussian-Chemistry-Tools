@@ -2,8 +2,7 @@
 use strict;
 use warnings;
 
-# Script written by Patrick O'Connor to extract the
-# charge multiplicity and co-ordinates from a log file
+# Extracts charge, multiplicity, and co-ordinates from a log file
 # typical usage ./getgeom foo.log > bar.gjf 
 
 my $counter1=0;

@@ -29,8 +29,12 @@ if (! open $out_fh_doublet, '>', $out_doublet ) {
         die "Bugger! cant write '$out' : $!";
 }
 
-# This loop deletes everything upto spin multiplicity
-# Then puts in some Place holder text and exits
+# This loop deletes everything upto the charge & spin multiplicity line
+# Then puts a title, newline, and a charge/spin place holder
+# finally substitute charge spin for whatever you want then write to 
+# one or more output files
+# Note - the way I do my batch files I start with a blank line then the title
+# Of course you might want to change that depending on how you insert your route section.
 
 my $counter = 0;
 foreach (<$in_fh>) {

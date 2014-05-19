@@ -30,7 +30,7 @@ print "$2 @{$data{$filename}}\n";
 }
 
 
-# Subroutine "slurps" each file so a single string
+# Subroutine "slurps" each file in to a single string
 # and then parses the relevant data into a hash of arrays
 
 sub load_data {

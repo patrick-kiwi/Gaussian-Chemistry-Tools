@@ -7,7 +7,7 @@
 use strict;
 use warnings;
 
-my %data; 	#Global varyable, the HoA data container
+my %data; 	#Global variable, the HoA data container
 
 #loads energies etc into data container
 my @files = glob("47[3-9]*let.log 4[8-9][0-9]*let.log");

@@ -8,7 +8,7 @@
 
 my $in = $ARGV[0];
 if (! defined $in) {
-        die "bugger! - INCORRECT  USAGE: $0 filename";
+        die "Error! - INCORRECT  USAGE: $0 filename";
 }
 my $out_singlet = $in;
 $out_singlet =~ s/(\d+)\.gjf/$1_singlet.gjf/;
@@ -18,15 +18,15 @@ $out_doublet =~ s/(\d+)\.gjf/$1_doublet.gjf/;
 
 
 if (! open $in_fh, '<', $in ) {
-        die "Damn! - cant open '$in' : $!";
+        die "Error! - cant open '$in' : $!";
 }
 
 if (! open $out_fh_singlet, '>', $out_singlet ) {
-        die "Bugger! cant write '$out' : $!";
+        die "Error! cant write '$out' : $!";
 }
 
 if (! open $out_fh_doublet, '>', $out_doublet ) {
-        die "Bugger! cant write '$out' : $!";
+        die "Error! cant write '$out' : $!";
 }
 
 # This loop deletes everything upto the charge & spin multiplicity line

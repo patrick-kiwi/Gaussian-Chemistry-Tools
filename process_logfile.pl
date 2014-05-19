@@ -10,7 +10,7 @@
 use strict;
 use warnings;
 
-my %data; 	#Global varyable, the HoA data container
+my %data; 	#Global variable, the HoA data container
 
 #loads energies etc into data container
 my @files = glob("*.log");
@@ -19,13 +19,13 @@ foreach (@files) {
 }
 
 
-#Now sort through the HoA and print all the data
+#Perl sorts through the HoA and print all the data
 for my $filename (sort keys %data){
 print "$filename @{$data{$filename}}\n ";
 }
 
 
-# Subroutine "slurps" each file to a single string
+# Subroutine "slurps" each file in to a single string
 # and then parses the relevant data into a hash of arrays
 sub load_data {
 my $file = $_;

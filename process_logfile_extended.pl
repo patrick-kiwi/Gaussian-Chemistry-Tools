@@ -4,9 +4,6 @@
 #Auckland Cancer Socitry Research Centre (New Zealand)
 #Feel free to use as you wish.
 
-use strict;
-use warnings;
-
 my %data; 	#Global variable, the HoA data container
 
 #loads energies etc into data container

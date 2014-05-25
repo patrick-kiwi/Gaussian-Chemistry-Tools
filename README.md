@@ -16,7 +16,7 @@ This program "slurps" the entire log file into a single string.  This is really 
 
 4>> process_logfile_extended.pl  
 Imagine you had hundreds of paired files with a common filename pattern, for instance "415_singet.log" and "415_doublet.log"
-You want perl to extract all the data in a way where the singlet and doublet data to appear on a single line because that's easy to work with in excel.  This script makes the output look like this (just capturing electronic energy here).
+You want perl to extract all the data in such a way that the singlet and doublet energies appear on a single line. In that way it's easy to work with in excel.  This script does just that so the output look like this (just capturing electronic energy here).
 "415 doublet -1085.2256596 singlet -1085.0870699"
 
 

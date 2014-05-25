@@ -7,9 +7,6 @@
 #usage process_logfile  ## this will process all *.log files see the glob line below
 
 
-use strict;
-use warnings;
-
 my %data; 	#Global variable, the HoA data container
 
 #loads energies etc into data container

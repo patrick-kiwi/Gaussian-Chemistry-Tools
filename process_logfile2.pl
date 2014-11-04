@@ -19,8 +19,8 @@ foreach (@files) {
 #print the data on a single line 
 
 my $counter = 0;
-my $doublet; #filename of state A
-my $singlet; #filename of state B
+my $doublet;
+my $singlet;
 
 for my $filename (sort keys %data){
 if ($filename =~ /(\d+)_(....let)/){ #Specify regex to match filename here

@@ -1,9 +1,5 @@
 #!/usr/bin/perl
 
-#Script written by Dr Patrick O'Connor patrick_kiwi@hotmail.com
-#Auckland Cancer Socitry Research Centre (New Zealand)
-#Feel free to use as you wish.
-
 my %data; 	#Global variable, the HoA data container
 
 #loads energies etc into data container

@@ -1,7 +1,5 @@
 #!/usr/bin/perl
 
-#Script written by Dr Patrick O'Connor patrick_kiwi@hotmail.com
-#Auckland Cancer Socitry Research Centre (New Zealand)
 #Prints the difference in any particular property ie HF, ZPE
 #between states with pattern matched filenames ie. 412_singlet.log and 412_doublet.log
 #Feel free to use as you wish.

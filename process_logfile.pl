@@ -1,9 +1,4 @@
 #!/usr/bin/perl
-
-#Script written by Dr Patrick O'Connor 
-#patrick_kiwi@hotmail.com
-#Auckland Cancer Socitry Research Centre (New Zealand)
-#Feel free to use as you wish.
 #usage process_logfile  ## this will process all *.log files see the glob line below
 
 
